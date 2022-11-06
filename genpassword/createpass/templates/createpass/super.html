@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'createpass/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'createpass/css/style.css' %}">
+    <title>Генератор паролей онлайн</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="menu_list">
+                <li><a href="#">Main page</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            {% block content %}
+            {% endblock content %}
+        </main>
+        <footer>
+            BOX 3
+        </footer>
+    </div>
+</body>
+</html>

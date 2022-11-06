@@ -1,0 +1,35 @@
+
+
+body {
+    background: #464646;
+    color: rgb(195, 151, 56);
+    font-size: 24px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding: 50px;
+    
+}
+
+
+
+/* lists */
+
+.menu_list {
+    text-align: center;
+    display: flex;
+    color:aqua;
+    text-decoration: none;
+}
+
+.menu_list li a {
+    text-decoration: none;
+    color: aqua;
+}
