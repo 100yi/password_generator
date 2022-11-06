@@ -33,3 +33,9 @@ def about(request):
 
 def pageNotFound(request, exception):
     return render(request, 'createpass/pageNotFound.html')
+
+
+def cleardb(request):
+    # clear db
+    return render(request, 'createpass/index.html')
+    
