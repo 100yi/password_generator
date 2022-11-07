@@ -2,11 +2,12 @@
 
 {% block content %}
 {% csrf_token %}
-<form action="/show_pas/" method="get">
-    <label for="pasword_length"></label>Длина пароля<input type="text" name="password_length_name" id="password_length">
+<form class="gen_pas_form" action="/show_pas/" method="get">
+    <label for="password_length">Password length</label><input class="input_text" type="text" name="password_length_name" id="password_length" placeholder="Password length...">
     <br>
-    <label for="isSpecial"></label>Содержит специальные символы?<input type="checkbox" name="isSpecial_name"
+    <label for="isSpecial">Have special symbols got?</label><input type="checkbox" name="isSpecial_name"
         id="isSpecial"> <br>
-    <input type="submit">
+    <label for="memorable_pas">Is memorable password</label><input type="checkbox" name="isMemorable" id="memorable_pas">
+    <input class="submit" type="submit">
 </form>
 {% endblock content %}

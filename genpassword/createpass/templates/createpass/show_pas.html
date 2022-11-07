@@ -2,9 +2,17 @@
 
 {% block content %}
 <ol>
-    {% for pass in completed_pass %}
-        <li>{{ pass }}</li>
-        <br>
-    {% endfor %}
-</ol>
+    {% if not isSimple %}
+        {% for pass in completed_pass %}
+            <li>{{ pass }}</li>
+            <br>
+        {% endfor %}
+    {% else %}
+        {% for pass in completed_pass %}
+            <li>{{ pass.1 }} - full password</li>
+            <li>{{ pass.0 }} - password alias</li>
+            <br>
+        {% endfor %}
+    {% endif %}
+</ol>   
 {% endblock content %}

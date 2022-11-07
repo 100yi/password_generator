@@ -1,9 +1,28 @@
+.container__header,
+.container__main,
+.container__footer {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+.container__header {
+    margin-top: 30px;
+}
+.container__main {
+    margin-top: 100px;
+}
+.container__footer {
+    padding-bottom: 25px;
+}
 
+* {
+box-sizing: border-box;
+}
 
 body {
-    background: #464646;
-    color: rgb(195, 151, 56);
+    background: #282828;
+    color: rgb(143, 104, 242);
     font-size: 24px;
+    font-family: Arial;
 }
 
 .wrapper {
@@ -18,18 +37,52 @@ body {
     
 }
 
+.gen_pas_form label {
+    margin-right: 15px;
+}
 
 
 /* lists */
 
 .menu_list {
-    text-align: center;
+    min-width: 800px;
     display: flex;
-    color:aqua;
+    justify-content: space-between;
+    color:rgb(118, 204, 204);
     text-decoration: none;
 }
 
 .menu_list li a {
     text-decoration: none;
-    color: aqua;
+    color: rgb(98, 197, 197);
+    transition: background-color .3s ease-out;
+    padding: 11px;
+}
+.menu_list li a:hover {
+    color: black;
+    padding: 10px;
+    border: 1px solid aqua;
+    background-color: rgb(221, 234, 245);
+}
+
+/* buttons */
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    width: 100px;
+    border-radius: 15px;
+    transition: all .3s ease-out;
+}
+.submit:hover {
+    background-color: rgb(143, 104, 242);
+}
+
+.input_text {
+    text-align: center;
+    min-height: 33px;
+    min-width: 150px;
+    border-radius: 7px;
+    font-size: 18px;
 }

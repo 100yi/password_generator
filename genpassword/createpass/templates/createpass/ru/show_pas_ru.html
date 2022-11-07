@@ -1,0 +1,10 @@
+{% extends 'createpass/super.html' %}
+
+{% block content %}
+<ol>
+    {% for pass in completed_pass %}
+        <li>{{ pass }}</li>
+        <br>
+    {% endfor %}
+</ol>
+{% endblock content %}

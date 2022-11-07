@@ -16,8 +16,12 @@ def show_pas(request):
             return redirect('gen', permanent=True)
         special = request.GET.get('isSpecial_name', False)
         special = True if special == 'on' else False  # It is add layer to find out value of special
-        pases = [gen_password(length=password_length, special_symbols=special) for _ in range(5)]
-        data = {'completed_pass': pases}
+        simple_pas = request.GET.get('isMemorable', False)
+        simple_pas = True if simple_pas == 'on' else False
+        pases = [gen_password(length=password_length, special_symbols=special, simple_pas=simple_pas) for _ in range(5)]
+        data = {'completed_pass': pases, 'isSimple': False}
+        if simple_pas:
+            data['isSimple'] = True
     else:
         return redirect('index')
     return render(request, 'createpass/show_pas.html', context=data)
@@ -38,4 +42,3 @@ def pageNotFound(request, exception):
 def cleardb(request):
     # clear db
     return render(request, 'createpass/index.html')
-    

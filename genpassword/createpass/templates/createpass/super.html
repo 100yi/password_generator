@@ -1,30 +1,38 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'createpass/css/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'createpass/css/style.css' %}">
-    <title>Генератор паролей онлайн</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <ul class="menu_list">
-                <li><a href="#">Main page</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </header>
-        <main class="main">
-            {% block content %}
-            {% endblock content %}
-        </main>
-        <footer>
-            BOX 3
-        </footer>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'createpass/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'createpass/css/style.css' %}">
+        <title>Генератор паролей онлайн</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <header class="container__header">
+                    <ul class="menu_list">
+                        <li><a href="/index/">Main page</a></li>
+                        <li><a href="/generate/">Generate password</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/login/">Login</a></li>
+                    </ul>
+                </header>
+                <main class="main container__main">
+                    {% block content %}
+                    {% endblock content %}
+                </main>
+                <footer class="container__footer">
+                    <ul class="menu_list">
+                        <li><a href="/index/">Main page</a></li>
+                        <li><a href="/generate/">Generate password</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/login/">Login</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </body>
 </html>

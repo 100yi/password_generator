@@ -1,0 +1,12 @@
+{% extends 'createpass/super.html' %}
+
+{% block content %}
+{% csrf_token %}
+<form action="/show_pas/" method="get">
+    <label for="pasword_length"></label>Длина пароля<input type="text" name="password_length_name" id="password_length">
+    <br>
+    <label for="isSpecial"></label>Содержит специальные символы?<input type="checkbox" name="isSpecial_name"
+        id="isSpecial"> <br>
+    <input type="submit">
+</form>
+{% endblock content %}
