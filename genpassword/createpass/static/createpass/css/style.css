@@ -86,3 +86,51 @@ body {
     border-radius: 7px;
     font-size: 18px;
 }
+
+
+/* colours */
+span {
+    padding: 3px;
+    margin-left: 1px;
+    color: black
+}
+.yellow {
+    background-color: yellow;
+}
+.green  {
+    background-color: green;
+}
+.crimson {
+    background-color: crimson;
+}
+.azure {
+    background-color: azure;
+}
+.brown {
+    background-color: brown;
+}
+.pink {
+    background-color: pink;
+}
+.blueviolet {
+    background-color: blueviolet;
+}
+.orange {
+    background-color: orange;
+}
+.tomato {
+    background-color: tomato;
+}
+.violet {
+    background-color: violet;
+}
+.orchid {
+    background-color: orchid;
+}
+
+/* TNX */
+.tnx {
+    margin-top: 157px;
+    font-size: 50px;
+    color: rgba(192, 192, 192, 0.134);
+}
