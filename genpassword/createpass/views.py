@@ -3,7 +3,7 @@ from .logical import gen_password
 
 
 # TODO create API for this view ["get password"]
-
+version_app = '1.0.0'
 def index(request):
     return render(request, 'createpass/index.html')
 
