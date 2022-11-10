@@ -1,0 +1,23 @@
+{% extends 'createpass/ru/super.html' %}
+
+{% block content %}
+<ol>
+    {% if not isSimple %}
+        {% for pass in completed_pass %}
+            <li>{{ pass }}</li>
+            <br>
+        {% endfor %}
+    {% else %}
+        {% for pass in completed_pass %}
+            {% autoescape off %}
+                <li>{{ pass.1 }} - full password</li>
+            {% endautoescape %}
+            <li>{{ pass.0 }} - password alias</li>
+            <br>
+        {% endfor %}
+    {% endif %}
+
+    <p class="tnx">Спасибо за использование приложения!</p>
+
+</ol>   
+{% endblock content %}

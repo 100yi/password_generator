@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'createpass/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'createpass/css/style.css' %}">
+        <title>Генератор паролей онлайн</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <header class="container__header">
+                    <ul class="menu_list">
+                        <li><a href="/ru/index/">Главная страница</a></li>
+                        <li><a href="/ru/generate/">Сгенерировать пароль</a></li>
+                        <li><a href="/ru/about/">О сайте</a></li>
+                        <li><a href="/ru/login/">Войти/Зарегистрироваться</a></li>
+                    </ul>
+                </header>
+                <main class="main container__main">
+                    {% block content %}
+                    {% endblock content %}
+                </main>
+                <footer class="container__footer">
+                    <ul class="menu_list">
+                        <li><a href="/ru/index/">Главная страница</a></li>
+                        <li><a href="/ru/generate/">Сгенерировать пароль</a></li>
+                        <li><a href="/ru/about/">О сайте</a></li>
+                        <li><a href="/ru/login/">Войти/Зарегистрироваться</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
