@@ -5,9 +5,14 @@
 <form class="gen_pas_form" action="/ru/show_pas/" method="get">
     <label for="password_length">Длина пароля</label><input class="input_text" type="text" name="password_length_name" id="password_length" placeholder="Password length...">
     <br>
+    <br>
     <label for="isSpecial">Имеет специальные символы?</label><input type="checkbox" name="isSpecial_name"
-        id="isSpecial"> <br>
+        id="isSpecial">
+    <br>
+    <br>
     <label for="memorable_pas">Это запоминающийся пароль?</label><input type="checkbox" name="isMemorable" id="memorable_pas">
+    <br>
+    <br>
     <input class="submit" type="submit">
 </form>
 {% endblock content %}
