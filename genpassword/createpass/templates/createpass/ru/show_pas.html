@@ -10,9 +10,9 @@
     {% else %}
         {% for pass in completed_pass %}
             {% autoescape off %}
-                <li>{{ pass.1 }} - full password</li>
+                <li>{{ pass.1 }} - Полный пароль</li>
             {% endautoescape %}
-            <li>{{ pass.0 }} - password alias</li>
+            <li>{{ pass.0 }} - Псевдоним пароля</li>
             <br>
         {% endfor %}
     {% endif %}
